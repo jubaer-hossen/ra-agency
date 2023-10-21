@@ -25,8 +25,8 @@
   <body>
     <header>
       <!-- nav bar section -->
-      <nav>
-        <div class="navbar bg-base-100">
+      <nav class="relative">
+        <div class="navbar bg-black text-white fixed top-0">
           <div class="navbar-start">
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -91,7 +91,7 @@
       </nav>
       <!-- header section -->
       <div
-        class="flex flex-col w-full lg:flex-row justify-center items-center my-8"
+        class="flex flex-col w-full lg:flex-row justify-center items-center my-20"
       >
         <div class="text-center mx-auto my-8 md:my-0">
           <h1 class="text-5xl">
@@ -112,26 +112,310 @@
       </div>
     </header>
     <main>
-      <div
-        class="my-8 flex flex-col w-full lg:flex-row justify-center items-center"
-      >
-        <div class="mx-auto">
-          <img
-            src="https://media.istockphoto.com/id/1284549946/photo/digital-marketing-concept-online-advertisement.jpg?b=1&s=612x612&w=0&k=20&c=AjXPuQ0EwRbNc3D4i8g-J1T4mlwM-CijYs9YAwyNQIY="
-            alt=""
-          />
+      <!-- About Us -->
+      <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto flex space-x-4">
+          <div class="w-1/2">
+            <img src="your-image.jpg" alt="About Us" class="rounded-lg" />
+          </div>
+          <div class="w-1/2">
+            <h2 class="text-center text-5xl font-semibold mb-4">About Us</h2>
+            <p class="text-gray-400">
+              Your Agency is a leading digital marketing firm committed to
+              delivering exceptional results for our clients. With our
+              expertise, we're here to help you succeed in the digital
+              landscape.RA Agency Is A Dynamic Digital Marketing Agency
+              Headquartered In The Vibrant City Of Dhaka, Bangladesh. Our
+              Passion For All Things Digital Fuels Our Commitment To Delivering
+              Exceptional Results For Our Clients. We Take Pride In Being At The
+              Forefront Of The Digital Marketing Industry, And Our Mission Is
+              Simple: To Empower Businesses Like Yours With Effective Online
+              Strategies That Deliver Tangible Growth. Every Business Is Unique,
+              And So Is Our Approach. We Believe In A Tailored, Data-Driven
+              Strategy That Aligns With Your Goals And Objectives. We Don’t
+              Offer One-Size-Fits-All Solutions; Instead, We Create Customized
+              Digital Marketing Plans That Ensure You Get The Results You
+              Desire.
+            </p>
+          </div>
         </div>
-        <div class="text-center mx-auto my-8 md:my-0">
-          <h1 class="text-5xl">
-            YOUR DIGITAL <br />
-            MARKETING AGENCY
-          </h1>
-          <p>
-            Take Your Business To The Highest Level. <br />Your Business Our
-            Responsibility. Try With Us.
+      </section>
+
+      <!-- Services -->
+      <section class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-semibold text-center mb-8">Our Services</h2>
+          <div class="flex flex-wrap justify-center -mx-4">
+            <!-- Service Card 1 (SEO) -->
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
+              <div
+                class="bg-gray-700 shadow-md rounded-lg h-full p-4 flex flex-col justify-between"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-10 h-10 text-white mb-2"
+                  viewBox="0 0 24 24"
+                >
+                  <!-- Actual SEO SVG code -->
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-.94-4.19l1.45-1.45c.2-.2.45-.29.7-.29s.5.09.7.29c.39.39.39 1.02 0 1.41l-2.14 2.14c-.39.39-1.02.39-1.41 0l-2.12-2.12c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.45 1.45 1.45-1.45c.2-.2.45-.29.7-.29s.5.09.7.29c.39.39.39 1.02 0 1.41l-2.12 2.12c-.39.39-1.02.39-1.41 0l-2.14-2.14c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.45 1.45zm.49-3.48c-.29-.29-.77-.29-1.06 0l-1.06 1.06 1.06 1.06 1.06-1.06c.29-.29.29-.77 0-1.06z"
+                    fill="#ffffff"
+                  />
+                </svg>
+                <h3 class="text-xl font-semibold mb-2 text-white">
+                  Search Engine Optimization (SEO)
+                </h3>
+                <p class="text-gray-300">
+                  Improve your website's visibility on search engines and drive
+                  organic traffic.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service Card 2 (Social Media Marketing) -->
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
+              <div
+                class="bg-gray-700 shadow-md rounded-lg h-full p-4 flex flex-col justify-between"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-10 h-10 text-white mb-2"
+                  viewBox="0 0 24 24"
+                >
+                  <!-- Actual Social Media Marketing SVG code -->
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-.94-4.19l1.45-1.45c.2-.20.45-.29.70-.29s.50.09.70.29c.39.39.39 1.02 0 1.41l-2.14 2.14c-.39.39-1.02.39-1.41 0l-2.12-2.12c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.45 1.45 1.45-1.45c.20-.20.45-.29.70-.29s.50.09.70.29c.39.39.39 1.02 0 1.41l-2.12 2.12c-.39.39-1.02.39-1.41 0l-2.14-2.14c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.45 1.45zm.49-3.48c-.29-.29-.77-.29-1.06 0l-1.06 1.06 1.06 1.06 1.06-1.06c.29-.29.29-.77 0-1.06z"
+                    fill="#ffffff"
+                  />
+                </svg>
+                <h3 class="text-xl font-semibold mb-2 text-white">
+                  Social Media Marketing
+                </h3>
+                <p class="text-gray-300">
+                  Engage your audience on social platforms and boost brand
+                  awareness.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service Card 3 (PPC) -->
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
+              <div
+                class="bg-gray-700 shadow-md rounded-lg h-full p-4 flex flex-col justify-between"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-10 h-10 text-white mb-2"
+                  viewBox="0 0 24 24"
+                >
+                  <!-- Actual PPC SVG code -->
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-.94-4.19l1.45-1.45c.20-.20.45-.29.70-.29s.50.09.70.29c.39.39.39 1.02 0 1.41l-2.14 2.14c.39.39-1.02.39-1.41 0l-2.12-2.12c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.45 1.45l1.45-1.45c.20-.20.45-.29.70-.29s.50.09.70.29c.39.39.39 1.02 0 1.41l-2.12 2.12c-.39.39-1.02.39-1.41 0l-2.14-2.14c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.45 1.45zm.49-3.48c-.29-.29-.77-.29-1.06 0l-1.06 1.06 1.06 1.06 1.06-1.06c.29-.29.29-.77 0-1.06z"
+                    fill="#ffffff"
+                  />
+                </svg>
+                <h3 class="text-xl font-semibold mb-2 text-white">
+                  Pay-Per-Click Advertising (PPC)
+                </h3>
+                <p class="text-gray-300">
+                  Drive targeted traffic with paid advertising campaigns.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service Card 4 (Content Marketing) -->
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
+              <div
+                class="bg-gray-700 shadow-md rounded-lg h-full p-4 flex flex-col justify-between"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-10 h-10 text-white mb-2"
+                  viewBox="0 0 24 24"
+                >
+                  <!-- Actual Content Marketing SVG code -->
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-.94-4.19l1.45-1.45c.20-.20.45-.29.70-.29s.50.09.70.29c.39.39.39 1.02 0 1.41l-2.14 2.14c.39.39-1.02.39-1.41 0l-2.12-2.12c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.45 1.45l1.45-1.45c.20-.20.45-.29.70-.29s.50.09.70.29c.39.39.39 1.02 0 1.41l-2.12 2.12c-.39.39-1.02.39-1.41 0l-2.14-2.14c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.45 1.45zm.49-3.48c-.29-.29-.77-.29-1.06 0l-1.06 1.06 1.06 1.06 1.06-1.06c.29-.29.29-.77 0-1.06z"
+                    fill="#ffffff"
+                  />
+                </svg>
+                <h3 class="text-xl font-semibold mb-2 text-white">
+                  Content Marketing
+                </h3>
+                <p class="text-gray-300">
+                  Create valuable content to engage your audience and improve
+                  SEO.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section class="py-16 bg-gray-700 text-white">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-semibold text-center mb-8">Our Portfolio</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Portfolio Item 1 -->
+            <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden">
+              <img
+                src="portfolio-image-1.jpg"
+                alt="Portfolio Item 1"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2 text-white">
+                  Project Title 1
+                </h3>
+                <p class="text-gray-300">
+                  Description of the project or client.
+                </p>
+                <a
+                  href="portfolio-item-1.html"
+                  class="text-blue-500 hover:underline"
+                  >View More</a
+                >
+              </div>
+            </div>
+
+            <!-- Portfolio Item 2 -->
+            <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden">
+              <img
+                src="portfolio-image-2.jpg"
+                alt="Portfolio Item 2"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2 text-white">
+                  Project Title 2
+                </h3>
+                <p class="text-gray-300">
+                  Description of the project or client.
+                </p>
+                <a
+                  href="portfolio-item-2.html"
+                  class="text-blue-500 hover:underline"
+                  >View More</a
+                >
+              </div>
+            </div>
+
+            <!-- Portfolio Item 3 -->
+            <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden">
+              <img
+                src="portfolio-image-3.jpg"
+                alt="Portfolio Item 3"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2 text-white">
+                  Project Title 3
+                </h3>
+                <p class="text-gray-300">
+                  Description of the project or client.
+                </p>
+                <a
+                  href="portfolio-item-3.html"
+                  class="text-blue-500 hover:underline"
+                  >View More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact CTA -->
+      <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-semibold mb-4">
+            Ready to Grow Your Business?
+          </h2>
+          <p class="mb-8">
+            Let's discuss how we can help you achieve your digital marketing
+            goals.
           </p>
+          <a
+            href="/contact"
+            class="bg-yellow-500 hover:bg-yellow-400 text-blue-900 py-2 px-4 rounded-full text-lg font-semibold transition duration-300"
+            >Contact Us</a
+          >
         </div>
-      </div>
+      </section>
+
+      <!-- Contact Us Section -->
+      <section id="contact" class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-semibold text-center mb-8">Contact Us</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Contact Form -->
+            <div class="bg-gray-700 shadow-md rounded-lg p-4">
+              <h3 class="text-xl font-semibold mb-2 text-white">
+                Send Us a Message
+              </h3>
+              <form action="#" method="post">
+                <div class="mb-4">
+                  <label
+                    for="name"
+                    class="block text-gray-300 font-semibold mb-2"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full p-2 border border-gray-300 rounded text-gray-900"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    for="email"
+                    class="block text-gray-300 font-semibold mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full p-2 border border-gray-300 rounded text-gray-900"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    for="message"
+                    class="block text-gray-300 font-semibold mb-2"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="w-full p-2 border border-gray-300 rounded text-gray-900"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="bg-blue-500 hover:bg-blue-400 text-white py-2 px-4 rounded-full font-semibold"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="bg-gray-700 shadow-md rounded-lg p-4">
+              <h3 class="text-xl font-semibold mb-2 text-white">
+                Contact Information
+              </h3>
+              <p class="text-gray-300 mb-2">Your Digital Marketing Agency</p>
+              <p class="text-gray-300 mb-2">123 Marketing Street</p>
+              <p class="text-gray-300 mb-2">City, State 12345</p>
+              <p class="text-gray-300 mb-2">Email: info@youragency.com</p>
+              <p class="text-gray-300">Phone: +1 (123) 456-7890</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
