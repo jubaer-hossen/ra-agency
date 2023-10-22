@@ -21,11 +21,29 @@
       src="https://kit.fontawesome.com/70443e6a19.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Lotti animation -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
   </head>
   <body>
-    <header>
+    <header class="pb-6">
+      <div class="-z-0 opacity-100 absolute blur-sm">
+        <dotlottie-player
+          src="https://lottie.host/1a6f2341-22d5-4392-b2ce-fe65a926ad9e/RcfriGF833.lottie"
+          background="transparent"
+          speed="1"
+          style="width: auto; height: auto"
+          direction="1"
+          mode="normal"
+          loop
+          autoplay
+        ></dotlottie-player>
+      </div>
       <!-- nav bar section -->
-      <nav class="relative">
+      <nav class="relative z-50">
         <div class="navbar bg-black text-white fixed top-0">
           <div class="navbar-start">
             <div class="dropdown">
@@ -51,7 +69,7 @@
               >
                 <li><a>Home</a></li>
                 <li><a>About</a></li>
-                <li><a>Services</a></li>
+                <li><a href="/services.html">Services</a></li>
                 <li><a>portfolio</a></li>
                 <li><a>Contact Us</a></li>
                 <!-- <li tabindex="0">
@@ -91,9 +109,9 @@
       </nav>
       <!-- header section -->
       <div
-        class="flex flex-col w-full lg:flex-row justify-center items-center my-20"
+        class="z-50 flex flex-col w-full lg:flex-row justify-center items-center my-20"
       >
-        <div class="text-center mx-auto my-8 md:my-0">
+        <div class="z-30 text-center text-white mx-auto my-8 md:my-0">
           <h1 class="text-5xl">
             YOUR DIGITAL <br />
             MARKETING AGENCY
@@ -103,11 +121,17 @@
             Responsibility. Try With Us.
           </p>
         </div>
-        <div class="mx-auto">
-          <img
-            src="https://media.istockphoto.com/id/1284549946/photo/digital-marketing-concept-online-advertisement.jpg?b=1&s=612x612&w=0&k=20&c=AjXPuQ0EwRbNc3D4i8g-J1T4mlwM-CijYs9YAwyNQIY="
-            alt=""
-          />
+        <div class="mx-auto z-1">
+          <dotlottie-player
+            src="https://lottie.host/d7ed15b5-1760-4c73-8d37-09a21e71a169/CcFNKkPYuK.lottie"
+            background="transparent "
+            speed="1"
+            style="width: 600px; height: 600"
+            direction="1"
+            mode="normal"
+            loop
+            autoplay
+          ></dotlottie-player>
         </div>
       </div>
     </header>
@@ -245,6 +269,91 @@
                 <p class="text-gray-300">
                   Create valuable content to engage your audience and improve
                   SEO.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Whey choose us -->
+      <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-semibold text-center mb-8">Why Choose Us</h2>
+          <div class="flex flex-wrap justify-center -mx-4">
+            <!-- Feature 1 -->
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
+              <div
+                class="feature-card bg-gray-800 shadow-lg rounded-xl p-6 h-full text-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-16 h-16 mx-auto text-blue-500 mb-6"
+                >
+                  <!-- Your SVG icon for feature 1 -->
+                </svg>
+                <h3 class="text-xl font-semibold mb-2">Expert Team</h3>
+                <p class="text-gray-400">
+                  Our team of experts is dedicated to delivering exceptional
+                  results.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
+              <div
+                class="feature-card bg-gray-800 shadow-lg rounded-xl p-6 h-full text-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-16 h-16 mx-auto text-blue-500 mb-6"
+                >
+                  <!-- Your SVG icon for feature 2 -->
+                </svg>
+                <h3 class="text-xl font-semibold mb-2">Proven Results</h3>
+                <p class="text-gray-400">
+                  We have a track record of achieving outstanding outcomes for
+                  our clients.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
+              <div
+                class="feature-card bg-gray-800 shadow-lg rounded-xl p-6 h-full text-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-16 h-16 mx-auto text-blue-500 mb-6"
+                >
+                  <!-- Your SVG icon for feature 3 -->
+                </svg>
+                <h3 class="text-xl font-semibold mb-2">Custom Solutions</h3>
+                <p class="text-gray-400">
+                  We tailor our services to meet your unique business needs.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
+              <div
+                class="feature-card bg-gray-800 shadow-lg rounded-xl p-6 h-full text-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-16 h-16 mx-auto text-blue-500 mb-6"
+                >
+                  <!-- Your SVG icon for feature 4 -->
+                </svg>
+                <h3 class="text-xl font-semibold mb-2">
+                  Client-Centric Approach
+                </h3>
+                <p class="text-gray-400">
+                  We prioritize your success and work closely with you to
+                  achieve your goals.
                 </p>
               </div>
             </div>
