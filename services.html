@@ -4,6 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+
+    <!-- DaisyUi -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/70443e6a19.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Lotti animation -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <!-- nav bar section -->
+      <nav class="relative z-50">
+        <div class="navbar bg-black text-white fixed top-0">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/services.html">About</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/services.html">portfolio</a></li>
+                <li><a href="/services.html">Contact Us</a></li>
+
+                <!-- <li tabindex="0">
+                <details>
+                  <summary>Parent</summary>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </details>
+              </li> -->
+              </ul>
+            </div>
+            <a class="btn btn-ghost normal-case text-xl"
+              ><img class="w-8" src="images/logo.png" alt="" />RA AGENCY</a
+            >
+          </div>
+          <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/services.html">About</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/services.html">portfolio</a></li>
+              <li><a href="/services.html">Contact Us</a></li>
+              <!-- <li tabindex="0">
+                <details>
+                  <summary>Parent</summary>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </details>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
