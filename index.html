@@ -7,7 +7,8 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/RG Logo.png" type="image/x-icon" />
-
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
     <!-- DaisyUi -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css"
@@ -32,7 +33,6 @@
   <!-- Body start here -->
   <body>
     <header class="pb-10 bg-blue-950">
-      <!-- bg-[url('/wave.svg')] bg-no-repeat bg-bottom -->
       <!-- background animation -->
       <div class="-z-0 opacity-100 absolute blur-sm">
         <dotlottie-player
@@ -193,110 +193,199 @@
       </section>
 
       <!-- Services -->
-      <section class="py-16 bg-gray-800 text-white">
-        <div class="container mx-auto">
-          <h2 class="text-3xl font-semibold text-center mb-8">Our Services</h2>
+      <section
+        class="bg-[url('/Images/blob-scene-haikei.svg')] bg-center bg-no-repeat bg-cover z-10 py-16 text-white"
+      >
+        <div class="container mx-auto z-40">
+          <h2 class="text-5xl font-bold uppercase text-center mb-8">
+            Our Services
+          </h2>
           <div class="flex flex-wrap justify-center -mx-4">
             <!-- Service Card 1 (SEO) -->
-            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
+            <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-8 relative">
               <div
-                class="bg-gray-700 shadow-md rounded-lg h-full p-4 flex flex-col justify-between"
+                class="bg-slate-950 shadow-md rounded-lg h-full p-4 flex flex-col justify-between"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-10 h-10 text-white mb-2"
-                  viewBox="0 0 24 24"
+                <!-- bg-[url('/Images/message-w.png')] bg-center bg-no-repeat bg-cover-->
+                <div
+                  class="flex justify-center items-center sticky -top-16 -start-10 w-32 h-20 p-6 bg-transparent rounded border-2 border-solid drop-shadow-[05px_5px_5px_rgb(220,20,60)]"
                 >
-                  <!-- Actual SEO SVG code -->
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-.94-4.19l1.45-1.45c.2-.2.45-.29.7-.29s.5.09.7.29c.39.39.39 1.02 0 1.41l-2.14 2.14c-.39.39-1.02.39-1.41 0l-2.12-2.12c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.45 1.45 1.45-1.45c.2-.2.45-.29.7-.29s.5.09.7.29c.39.39.39 1.02 0 1.41l-2.12 2.12c-.39.39-1.02.39-1.41 0l-2.14-2.14c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.45 1.45zm.49-3.48c-.29-.29-.77-.29-1.06 0l-1.06 1.06 1.06 1.06 1.06-1.06c.29-.29.29-.77 0-1.06z"
-                    fill="#ffffff"
-                  />
-                </svg>
-                <h3 class="text-xl font-semibold mb-2 text-white">
-                  Search Engine Optimization (SEO)
-                </h3>
-                <p class="text-gray-300">
-                  Improve your website's visibility on search engines and drive
-                  organic traffic.
-                </p>
+                  <dotlottie-player
+                    src="https://lottie.host/48bb4e53-5244-43bb-b551-d39681b29989/nFShVwbSXX.lottie"
+                    background="transparent"
+                    speed="1"
+                    style="width: 300px; height: 300px"
+                    direction="1"
+                    mode="normal"
+                    loop
+                    autoplay
+                  ></dotlottie-player>
+                  <!-- <img src="/Images/message-w.png" alt="" /> -->
+                </div>
+                <div class="mt-4">
+                  <h3 class="text-xl font-semibold mb-2 text-white">
+                    Search Engine Optimization (SEO)
+                  </h3>
+                  <p class="text-gray-300">
+                    Improve your website's visibility on search engines and
+                    drive organic traffic.
+                  </p>
+                </div>
               </div>
             </div>
-
-            <!-- Service Card 2 (Social Media Marketing) -->
-            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
+            <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-8 relative">
               <div
-                class="bg-gray-700 shadow-md rounded-lg h-full p-4 flex flex-col justify-between"
+                class="bg-slate-950 shadow-md rounded-lg h-full p-4 flex flex-col justify-between"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-10 h-10 text-white mb-2"
-                  viewBox="0 0 24 24"
+                <!-- bg-[url('/Images/message-w.png')] bg-center bg-no-repeat bg-cover-->
+                <div
+                  class="flex justify-center items-center sticky -top-16 -start-10 w-32 h-20 p-6 bg-transparent rounded border-2 border-solid drop-shadow-[05px_5px_5px_rgb(220,20,60)]"
                 >
-                  <!-- Actual Social Media Marketing SVG code -->
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-.94-4.19l1.45-1.45c.2-.20.45-.29.70-.29s.50.09.70.29c.39.39.39 1.02 0 1.41l-2.14 2.14c-.39.39-1.02.39-1.41 0l-2.12-2.12c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.45 1.45 1.45-1.45c.20-.20.45-.29.70-.29s.50.09.70.29c.39.39.39 1.02 0 1.41l-2.12 2.12c-.39.39-1.02.39-1.41 0l-2.14-2.14c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.45 1.45zm.49-3.48c-.29-.29-.77-.29-1.06 0l-1.06 1.06 1.06 1.06 1.06-1.06c.29-.29.29-.77 0-1.06z"
-                    fill="#ffffff"
-                  />
-                </svg>
-                <h3 class="text-xl font-semibold mb-2 text-white">
-                  Social Media Marketing
-                </h3>
-                <p class="text-gray-300">
-                  Engage your audience on social platforms and boost brand
-                  awareness.
-                </p>
+                  <dotlottie-player
+                    src="https://lottie.host/48bb4e53-5244-43bb-b551-d39681b29989/nFShVwbSXX.lottie"
+                    background="transparent"
+                    speed="1"
+                    style="width: 300px; height: 300px"
+                    direction="1"
+                    mode="normal"
+                    loop
+                    autoplay
+                  ></dotlottie-player>
+                  <!-- <img src="/Images/message-w.png" alt="" /> -->
+                </div>
+                <div class="mt-4">
+                  <h3 class="text-xl font-semibold mb-2 text-white">
+                    Search Engine Optimization (SEO)
+                  </h3>
+                  <p class="text-gray-300">
+                    Improve your website's visibility on search engines and
+                    drive organic traffic.
+                  </p>
+                </div>
               </div>
             </div>
-
-            <!-- Service Card 3 (PPC) -->
-            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
+            <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-8 relative">
               <div
-                class="bg-gray-700 shadow-md rounded-lg h-full p-4 flex flex-col justify-between"
+                class="bg-slate-950 shadow-md rounded-lg h-full p-4 flex flex-col justify-between"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-10 h-10 text-white mb-2"
-                  viewBox="0 0 24 24"
+                <!-- bg-[url('/Images/message-w.png')] bg-center bg-no-repeat bg-cover-->
+                <div
+                  class="flex justify-center items-center sticky -top-16 -start-10 w-32 h-20 p-6 bg-transparent rounded border-2 border-solid drop-shadow-[05px_5px_5px_rgb(220,20,60)]"
                 >
-                  <!-- Actual PPC SVG code -->
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-.94-4.19l1.45-1.45c.20-.20.45-.29.70-.29s.50.09.70.29c.39.39.39 1.02 0 1.41l-2.14 2.14c.39.39-1.02.39-1.41 0l-2.12-2.12c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.45 1.45l1.45-1.45c.20-.20.45-.29.70-.29s.50.09.70.29c.39.39.39 1.02 0 1.41l-2.12 2.12c-.39.39-1.02.39-1.41 0l-2.14-2.14c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.45 1.45zm.49-3.48c-.29-.29-.77-.29-1.06 0l-1.06 1.06 1.06 1.06 1.06-1.06c.29-.29.29-.77 0-1.06z"
-                    fill="#ffffff"
-                  />
-                </svg>
-                <h3 class="text-xl font-semibold mb-2 text-white">
-                  Pay-Per-Click Advertising (PPC)
-                </h3>
-                <p class="text-gray-300">
-                  Drive targeted traffic with paid advertising campaigns.
-                </p>
+                  <dotlottie-player
+                    src="https://lottie.host/48bb4e53-5244-43bb-b551-d39681b29989/nFShVwbSXX.lottie"
+                    background="transparent"
+                    speed="1"
+                    style="width: 300px; height: 300px"
+                    direction="1"
+                    mode="normal"
+                    loop
+                    autoplay
+                  ></dotlottie-player>
+                  <!-- <img src="/Images/message-w.png" alt="" /> -->
+                </div>
+                <div class="mt-4">
+                  <h3 class="text-xl font-semibold mb-2 text-white">
+                    Search Engine Optimization (SEO)
+                  </h3>
+                  <p class="text-gray-300">
+                    Improve your website's visibility on search engines and
+                    drive organic traffic.
+                  </p>
+                </div>
               </div>
             </div>
-
-            <!-- Service Card 4 (Content Marketing) -->
-            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
+            <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-8 relative">
               <div
-                class="bg-gray-700 shadow-md rounded-lg h-full p-4 flex flex-col justify-between"
+                class="bg-slate-950 shadow-md rounded-lg h-full p-4 flex flex-col justify-between"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-10 h-10 text-white mb-2"
-                  viewBox="0 0 24 24"
+                <!-- bg-[url('/Images/message-w.png')] bg-center bg-no-repeat bg-cover-->
+                <div
+                  class="flex justify-center items-center sticky -top-16 -start-10 w-32 h-20 p-6 bg-transparent rounded border-2 border-solid drop-shadow-[05px_5px_5px_rgb(220,20,60)]"
                 >
-                  <!-- Actual Content Marketing SVG code -->
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-.94-4.19l1.45-1.45c.20-.20.45-.29.70-.29s.50.09.70.29c.39.39.39 1.02 0 1.41l-2.14 2.14c.39.39-1.02.39-1.41 0l-2.12-2.12c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.45 1.45l1.45-1.45c.20-.20.45-.29.70-.29s.50.09.70.29c.39.39.39 1.02 0 1.41l-2.12 2.12c-.39.39-1.02.39-1.41 0l-2.14-2.14c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.45 1.45zm.49-3.48c-.29-.29-.77-.29-1.06 0l-1.06 1.06 1.06 1.06 1.06-1.06c.29-.29.29-.77 0-1.06z"
-                    fill="#ffffff"
-                  />
-                </svg>
-                <h3 class="text-xl font-semibold mb-2 text-white">
-                  Content Marketing
-                </h3>
-                <p class="text-gray-300">
-                  Create valuable content to engage your audience and improve
-                  SEO.
-                </p>
+                  <dotlottie-player
+                    src="https://lottie.host/48bb4e53-5244-43bb-b551-d39681b29989/nFShVwbSXX.lottie"
+                    background="transparent"
+                    speed="1"
+                    style="width: 300px; height: 300px"
+                    direction="1"
+                    mode="normal"
+                    loop
+                    autoplay
+                  ></dotlottie-player>
+                  <!-- <img src="/Images/message-w.png" alt="" /> -->
+                </div>
+                <div class="mt-4">
+                  <h3 class="text-xl font-semibold mb-2 text-white">
+                    Search Engine Optimization (SEO)
+                  </h3>
+                  <p class="text-gray-300">
+                    Improve your website's visibility on search engines and
+                    drive organic traffic.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-8 relative">
+              <div
+                class="bg-slate-950 shadow-md rounded-lg h-full p-4 flex flex-col justify-between"
+              >
+                <!-- bg-[url('/Images/message-w.png')] bg-center bg-no-repeat bg-cover-->
+                <div
+                  class="flex justify-center items-center sticky -top-16 -start-10 w-32 h-20 p-6 bg-transparent rounded border-2 border-solid drop-shadow-[05px_5px_5px_rgb(220,20,60)]"
+                >
+                  <dotlottie-player
+                    src="https://lottie.host/48bb4e53-5244-43bb-b551-d39681b29989/nFShVwbSXX.lottie"
+                    background="transparent"
+                    speed="1"
+                    style="width: 300px; height: 300px"
+                    direction="1"
+                    mode="normal"
+                    loop
+                    autoplay
+                  ></dotlottie-player>
+                  <!-- <img src="/Images/message-w.png" alt="" /> -->
+                </div>
+                <div class="mt-4">
+                  <h3 class="text-xl font-semibold mb-2 text-white">
+                    Search Engine Optimization (SEO)
+                  </h3>
+                  <p class="text-gray-300">
+                    Improve your website's visibility on search engines and
+                    drive organic traffic.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-8 relative">
+              <div
+                class="bg-slate-950 shadow-md rounded-lg h-full p-4 flex flex-col justify-between"
+              >
+                <!-- bg-[url('/Images/message-w.png')] bg-center bg-no-repeat bg-cover-->
+                <div
+                  class="flex justify-center items-center sticky -top-16 -start-10 w-32 h-20 p-6 bg-transparent rounded border-2 border-solid drop-shadow-[05px_5px_5px_rgb(220,20,60)]"
+                >
+                  <dotlottie-player
+                    src="https://lottie.host/48bb4e53-5244-43bb-b551-d39681b29989/nFShVwbSXX.lottie"
+                    background="transparent"
+                    speed="1"
+                    style="width: 300px; height: 300px"
+                    direction="1"
+                    mode="normal"
+                    loop
+                    autoplay
+                  ></dotlottie-player>
+                  <!-- <img src="/Images/message-w.png" alt="" /> -->
+                </div>
+                <div class="mt-4">
+                  <h3 class="text-xl font-semibold mb-2 text-white">
+                    Search Engine Optimization (SEO)
+                  </h3>
+                  <p class="text-gray-300">
+                    Improve your website's visibility on search engines and
+                    drive organic traffic.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
