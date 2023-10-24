@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind and daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lotti animation -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+
+    <style>
+      /* Custom styles for the modal */
+      .portfolio-card {
+        height: 200px; /* Adjust to your desired height */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- nav bar section -->
+      <nav class="relative z-50">
+        <div class="navbar bg-black text-white fixed top-0">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/services.html">Portfolio</a></li>
+                <li><a href="/index.html#contact">Contact Us</a></li>
+              </ul>
+            </div>
+            <a href="/index.html" class="btn btn-ghost normal-case text-xl">
+              <img class="w-8" src="images/RG Logo.png" alt="" /> RA AGENCY
+            </a>
+          </div>
+          <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/index.html#about">About</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/services.html">Portfolio</a></li>
+              <li><a href="/index.html#contact">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner section -->
+      <section>
+        <div
+          class="z-50 bg-indigo-950 flex flex-col w-full lg:flex-row justify-center items-center mt-16 mb-0 py-4"
+        >
+          <div
+            class="md:w-6/12 z-30 text-center text-white md:ps-14 mx-auto my-8 md:my-0 font-bold"
+          >
+            <h1 class="md:text-6xl text-4xl">
+              <span class="text-orange-400">Our</span> Portfolio
+            </h1>
+            <br />
+            <p>
+              Discover our portfolio – a showcase of excellence, creativity, and
+              client success. Our work speaks volumes, from captivating designs
+              to innovative solutions. Join us on this visual journey and see
+              how we turn ideas into reality.
+            </p>
+          </div>
+
+          <!-- https://lottie.host/2305567d-34e6-4092-803c-1a2fb8ad7cb8/t01DyA1tfy.json -->
+          <div class="md:w-5/12 mx-auto z-1">
+            <dotlottie-player
+              src="https://lottie.host/da0d9254-2e9c-40aa-99ff-fe070cc4f8ce/cNh7pm7Kde.json"
+              background="transparent "
+              speed="1"
+              style="width: 100%; max-width: 600px"
+              direction="1"
+              mode="normal"
+              loop
+              autoplay
+            ></dotlottie-player>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section
+        class="bg-[url('Images/slanted-gradient2.svg')] bg-cover bg-repeat-y my-18 pt-14"
+      >
+        <div class="container mx-auto h-full">
+          <h2 class="text-5xl text-white font-semibold text-center my-8">
+            Our Portfolio
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Sample Card 1 -->
+            <div
+              class="shadow-md rounded-lg bg-gray-900 hover:drop-shadow-[02px_2px_10px_rgb(0,169,255)] hover:scale-105 duration-300"
+            >
+              <div class="relative portfolio-card overflow-hidden">
+                <img
+                  src="Images/download.jpeg"
+                  alt="Image 1"
+                  class="w-full h-auto cursor-pointer"
+                  data-modal="modal-1"
+                  onclick="my_modal_1.showModal()"
+                />
+              </div>
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2 text-green-600">
+                  Project Title 1
+                </h3>
+                <p class="text-gray-400">
+                  Description of the project or client.
+                </p>
+              </div>
+            </div>
+            <!-- Sample Card 2 -->
+            <div
+              class="shadow-md rounded-lg bg-gray-900 hover:drop-shadow-[02px_2px_10px_rgb(0,169,255)] hover:scale-105 duration-300"
+            >
+              <div class="relative portfolio-card overflow-hidden-y-scroll">
+                <img
+                  src="Images/blob-scene-haikei2.svg"
+                  alt="Image 2"
+                  class="w-full h-auto cursor-pointer"
+                  data-modal="modal-2"
+                  onclick="my_modal_2.showModal()"
+                />
+              </div>
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2 text-green-600">
+                  Project Title 2
+                </h3>
+                <p class="text-gray-400">
+                  Description of the project or client.
+                </p>
+              </div>
+            </div>
+            <!-- Sample Card 3 -->
+            <div
+              class="shadow-md rounded-lg bg-gray-900 hover:drop-shadow-[02px_2px_10px_rgb(0,169,255)] hover:scale-105 duration-300"
+            >
+              <div class="relative portfolio-card overflow-hidden-y-scroll">
+                <img
+                  src="Images/blob-scene-haikei1.svg"
+                  alt="Image 3"
+                  class="w-full h-auto cursor-pointer"
+                  data-modal="modal-3"
+                  onclick="my_modal_3.showModal()"
+                />
+              </div>
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2 text-green-600">
+                  Project Title 3
+                </h3>
+                <p class="text-gray-400">
+                  Description of the project or client.
+                </p>
+              </div>
+            </div>
+            <!-- Sample Card 4 -->
+            <div
+              class="shadow-md rounded-lg bg-gray-900 hover:drop-shadow-[02px_2px_10px_rgb(0,169,255)] hover:scale-105 duration-300"
+            >
+              <div class="relative portfolio-card overflow-hidden-y-scroll">
+                <img
+                  src="Images/blob-scene-haikei.svg"
+                  alt="Image 4"
+                  class="w-full h-auto cursor-pointer"
+                  data-modal="modal-4"
+                  onclick="my_modal_4.showModal()"
+                />
+              </div>
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2 text-green-600">
+                  Project Title 4
+                </h3>
+                <p class="text-gray-400">
+                  Description of the project or client.
+                </p>
+              </div>
+            </div>
+            <!-- Sample Card 5 -->
+            <div
+              class="shadow-md rounded-lg bg-gray-900 hover:drop-shadow-[02px_2px_10px_rgb(0,169,255)] hover:scale-105 duration-300"
+            >
+              <div class="relative portfolio-card overflow-hidden">
+                <img
+                  src="Images/download.jpeg"
+                  alt="Image 1"
+                  class="w-full h-auto cursor-pointer"
+                  data-modal="modal-1"
+                  onclick="my_modal_1.showModal()"
+                />
+              </div>
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2 text-green-600">
+                  Project Title 1
+                </h3>
+                <p class="text-gray-400">
+                  Description of the project or client.
+                </p>
+              </div>
+            </div>
+            <!-- Sample Card 6 -->
+            <div
+              class="shadow-md rounded-lg bg-gray-900 hover:drop-shadow-[02px_2px_10px_rgb(0,169,255)] hover:scale-105 duration-300"
+            >
+              <div class="relative portfolio-card overflow-hidden-y-scroll">
+                <img
+                  src="Images/blob-scene-haikei2.svg"
+                  alt="Image 2"
+                  class="w-full h-auto cursor-pointer"
+                  data-modal="modal-2"
+                  onclick="my_modal_2.showModal()"
+                />
+              </div>
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2 text-green-600">
+                  Project Title 2
+                </h3>
+                <p class="text-gray-400">
+                  Description of the project or client.
+                </p>
+              </div>
+            </div>
+            <!-- Sample Card 7 -->
+            <div
+              class="shadow-md rounded-lg bg-gray-900 hover:drop-shadow-[02px_2px_10px_rgb(0,169,255)] hover:scale-105 duration-300"
+            >
+              <div class="relative portfolio-card overflow-hidden-y-scroll">
+                <img
+                  src="Images/blob-scene-haikei1.svg"
+                  alt="Image 3"
+                  class="w-full h-auto cursor-pointer"
+                  data-modal="modal-3"
+                  onclick="my_modal_3.showModal()"
+                />
+              </div>
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2 text-green-600">
+                  Project Title 3
+                </h3>
+                <p class="text-gray-400">
+                  Description of the project or client.
+                </p>
+              </div>
+            </div>
+            <!-- Sample Card 8 -->
+            <div
+              class="shadow-md rounded-lg bg-gray-900 hover:drop-shadow-[02px_2px_10px_rgb(0,169,255)] hover:scale-105 duration-300"
+            >
+              <div class="relative portfolio-card overflow-hidden-y-scroll">
+                <img
+                  src="Images/blob-scene-haikei.svg"
+                  alt="Image 4"
+                  class="w-full h-auto cursor-pointer"
+                  data-modal="modal-4"
+                  onclick="my_modal_4.showModal()"
+                />
+              </div>
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2 text-green-600">
+                  Project Title 4
+                </h3>
+                <p class="text-gray-400">
+                  Description of the project or client.
+                </p>
+              </div>
+            </div>
+            <!-- Sample Card 9 -->
+            <div
+              class="shadow-md rounded-lg bg-gray-900 hover:drop-shadow-[02px_2px_10px_rgb(0,169,255)] hover:scale-105 duration-300"
+            >
+              <div class="relative portfolio-card overflow-hidden">
+                <img
+                  src="Images/download.jpeg"
+                  alt="Image 1"
+                  class="w-full h-auto cursor-pointer"
+                  data-modal="modal-1"
+                  onclick="my_modal_1.showModal()"
+                />
+              </div>
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2 text-green-600">
+                  Project Title 1
+                </h3>
+                <p class="text-gray-400">
+                  Description of the project or client.
+                </p>
+              </div>
+            </div>
+            <!-- Sample Card 10 -->
+            <div
+              class="shadow-md rounded-lg bg-gray-900 hover:drop-shadow-[02px_2px_10px_rgb(0,169,255)] hover:scale-105 duration-300"
+            >
+              <div class="relative portfolio-card overflow-hidden-y-scroll">
+                <img
+                  src="Images/blob-scene-haikei2.svg"
+                  alt="Image 2"
+                  class="w-full h-auto cursor-pointer"
+                  data-modal="modal-2"
+                  onclick="my_modal_2.showModal()"
+                />
+              </div>
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2 text-green-600">
+                  Project Title 2
+                </h3>
+                <p class="text-gray-400">
+                  Description of the project or client.
+                </p>
+              </div>
+            </div>
+            <!-- Sample Card 11 -->
+            <div
+              class="shadow-md rounded-lg bg-gray-900 hover:drop-shadow-[02px_2px_10px_rgb(0,169,255)] hover:scale-105 duration-300"
+            >
+              <div class="relative portfolio-card overflow-hidden-y-scroll">
+                <img
+                  src="Images/blob-scene-haikei1.svg"
+                  alt="Image 3"
+                  class="w-full h-auto cursor-pointer"
+                  data-modal="modal-3"
+                  onclick="my_modal_3.showModal()"
+                />
+              </div>
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2 text-green-600">
+                  Project Title 3
+                </h3>
+                <p class="text-gray-400">
+                  Description of the project or client.
+                </p>
+              </div>
+            </div>
+            <!-- Sample Card 12 -->
+            <div
+              class="shadow-md rounded-lg bg-gray-900 hover:drop-shadow-[02px_2px_10px_rgb(0,169,255)] hover:scale-105 duration-300"
+            >
+              <div class="relative portfolio-card overflow-hidden-y-scroll">
+                <img
+                  src="Images/blob-scene-haikei.svg"
+                  alt="Image 4"
+                  class="w-full h-auto cursor-pointer"
+                  data-modal="modal-4"
+                  onclick="my_modal_4.showModal()"
+                />
+              </div>
+              <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2 text-green-600">
+                  Project Title 4
+                </h3>
+                <p class="text-gray-400">
+                  Description of the project or client.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- daisyUI modal -->
+    <!-- You can open the modal using ID.showModal() method -->
+    <dialog id="my_modal_1" class="modal">
+      <div class="modal-box">
+        <form method="dialog">
+          <button
+            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <img
+          src="Images/download.jpeg"
+          alt="Image 1"
+          class="w-full h-auto cursor-pointer"
+          data-modal="modal-1"
+        />
+      </div>
+    </dialog>
+    <!-- modal 2 -->
+    <dialog id="my_modal_2" class="modal">
+      <div class="modal-box">
+        <form method="dialog">
+          <button
+            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <img
+          src="Images/blob-scene-haikei.svg"
+          alt="Image 1"
+          class="w-full h-auto cursor-pointer"
+          data-modal="modal-1"
+        />
+      </div>
+    </dialog>
+    <!-- modal 3 -->
+    <dialog id="my_modal_3" class="modal">
+      <div class="modal-box">
+        <form method="dialog">
+          <button
+            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <img
+          src="Images/blob-scene-haikei1.svg"
+          alt="Image 1"
+          class="w-full h-auto cursor-pointer"
+          data-modal="modal-1"
+        />
+      </div>
+    </dialog>
+    <!-- modal 4 -->
+    <dialog id="my_modal_4" class="modal">
+      <div class="modal-box">
+        <form method="dialog">
+          <button
+            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <img
+          src="Images/blob-scene-haikei2.svg"
+          alt="Image 1"
+          class="w-full h-auto cursor-pointer"
+          data-modal="modal-1"
+        />
+      </div>
+    </dialog>
+    <!-- modal 5 -->
+    <dialog id="my_modal_5" class="modal">
+      <div class="modal-box">
+        <form method="dialog">
+          <button
+            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <img
+          src="Images/blob-scene-haikei2.svg"
+          alt="Image 1"
+          class="w-full h-auto cursor-pointer"
+          data-modal="modal-1"
+        />
+      </div>
+    </dialog>
+    <!-- modal 6 -->
+    <dialog id="my_modal_6" class="modal">
+      <div class="modal-box">
+        <form method="dialog">
+          <button
+            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <img
+          src="Images/blob-scene-haikei2.svg"
+          alt="Image 1"
+          class="w-full h-auto cursor-pointer"
+          data-modal="modal-1"
+        />
+      </div>
+    </dialog>
+    <!-- modal 7 -->
+    <dialog id="my_modal_7" class="modal">
+      <div class="modal-box">
+        <form method="dialog">
+          <button
+            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <img
+          src="Images/blob-scene-haikei2.svg"
+          alt="Image 1"
+          class="w-full h-auto cursor-pointer"
+          data-modal="modal-1"
+        />
+      </div>
+    </dialog>
+    <!-- modal 8 -->
+    <dialog id="my_modal_8" class="modal">
+      <div class="modal-box">
+        <form method="dialog">
+          <button
+            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <img
+          src="Images/blob-scene-haikei2.svg"
+          alt="Image 1"
+          class="w-full h-auto cursor-pointer"
+          data-modal="modal-1"
+        />
+      </div>
+    </dialog>
+    <!-- modal 9 -->
+    <dialog id="my_modal_9" class="modal">
+      <div class="modal-box">
+        <form method="dialog">
+          <button
+            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <img
+          src="Images/blob-scene-haikei2.svg"
+          alt="Image 1"
+          class="w-full h-auto cursor-pointer"
+          data-modal="modal-1"
+        />
+      </div>
+    </dialog>
+    <!-- modal 10 -->
+    <dialog id="my_modal_10" class="modal">
+      <div class="modal-box">
+        <form method="dialog">
+          <button
+            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <img
+          src="Images/blob-scene-haikei2.svg"
+          alt="Image 1"
+          class="w-full h-auto cursor-pointer"
+          data-modal="modal-1"
+        />
+      </div>
+    </dialog>
+    <!-- modal 11 -->
+    <dialog id="my_modal_11" class="modal">
+      <div class="modal-box">
+        <form method="dialog">
+          <button
+            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <img
+          src="Images/blob-scene-haikei2.svg"
+          alt="Image 1"
+          class="w-full h-auto cursor-pointer"
+          data-modal="modal-1"
+        />
+      </div>
+    </dialog>
+    <!-- modal 12 -->
+    <dialog id="my_modal_12" class="modal">
+      <div class="modal-box">
+        <form method="dialog">
+          <button
+            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <img
+          src="Images/blob-scene-haikei2.svg"
+          alt="Image 1"
+          class="w-full h-auto cursor-pointer"
+          data-modal="modal-1"
+        />
+      </div>
+    </dialog>
+  </body>
+</html>
